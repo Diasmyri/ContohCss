@@ -15,21 +15,31 @@
         }
 
 
-           /* ### POSITIONING ### */
+        /* === POSITIONING === */
         .positioning-container {
-        position: relative; /* Referensi untuk elemen yang posisinya absolut */
-        height: 200px;
-        border: 1px solid #aaa;
+        position: relative;
+        top: 50%;
+        left: 40%;
+        width: 220px;
+        height: 220px;
+        border: 2px dotted #607d8b;
         }
 
         .positioned-box {
-        position: absolute; /* Ditempatkan relatif terhadap container */
-        top: 20px;
-        right: 20px;
-        width: 100px;
-        height: 100px;
-        background-color: salmon;
-        }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Untuk benar-benar centering */
+        width: 130px;
+        height: 130px;
+        border-radius: 20px;
+        background-color: #ff7043;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 
         /* ### DISPLAY DAN LAYOUT ### */
         .inline-box {
@@ -114,7 +124,7 @@
      <!-- POSITIONING -->
     <h2>2. Positioning</h2>
     <div class="positioning-container">
-        <div class="positioned-box">Posisi Absolut</div>
+        <div class="positioned-box">Posisi Center</div>
     </div>
 
     <!-- DISPLAY DAN LAYOUT -->
