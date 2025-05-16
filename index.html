@@ -71,20 +71,28 @@
         }
 
 
-         /* ### CSS GRID ### */
+        /* === CSS GRID === */
         .grid-container {
-        display: grid; /* Mengaktifkan Grid layout */
-        grid-template-columns: repeat(3, 1fr); /* 3 kolom dengan lebar sama */
-        gap: 10px;
-        background-color: #fafafa;
-        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        background-color: #fff3e0;
+        padding: 15px;
+        border: 2px solid #ff9800;
         }
 
         .grid-item {
-        background-color: #03a9f4;
-        padding: 20px;
-        color: white;
+        background-color: #fb8c00;
+        padding: 25px;
+        color: #fff;
+        border-radius: 5px;
+        /* Tambahan agar teks berada di tengah */
+        display: flex;
+        align-items: center;
+        justify-content: center;
         }
+
+
 
         /* ### RESPONSIVE DESIGN ### */
         .responsive-box {
